@@ -21,8 +21,11 @@ public abstract class TP112221 implements FunctionMV{
         }
 
         System.out.println(fx(massiveOfDoubles));
+        
+        System.out.println();
+        Point point = new Point(3);
     }
-    
+
     @Override
     public double fx(double[] x) {
         double sum = 0;
@@ -33,5 +36,13 @@ public abstract class TP112221 implements FunctionMV{
         
         return sum;
     }
+    
+    public double fRosen(Point point) {
+		double diff = Math.pow(point.components[0], 2);
+		double a = Math.pow(1-point.components[0], 2);
+		double b = Math.pow(point.components[1]-diff, 2);
+                
+		return a + (100*b);
+	}
     
 }
