@@ -1,8 +1,9 @@
 package tp112221;
 
+import rossenbroke.Point;
 import java.util.Scanner;
 
-public abstract class TP112221 implements FunctionMV{
+public abstract class MainF1 implements FunctionMV{
     
     protected Scanner scn = new Scanner(System.in);
     protected double[] massiveOfDoubles;
@@ -21,9 +22,6 @@ public abstract class TP112221 implements FunctionMV{
         }
 
         System.out.println(fx(massiveOfDoubles));
-        
-        System.out.println();
-        Point point = new Point(3);
     }
 
     @Override
@@ -35,14 +33,5 @@ public abstract class TP112221 implements FunctionMV{
         }
         
         return sum;
-    }
-    
-    public double fRosen(Point point) {
-		double diff = Math.pow(point.components[0], 2);
-		double a = Math.pow(1-point.components[0], 2);
-		double b = Math.pow(point.components[1]-diff, 2);
-                
-		return a + (100*b);
-	}
-    
+    }   
 }
