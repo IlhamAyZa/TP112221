@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public abstract class TP112221 implements SumOfSquares{
     
-    protected static Scanner scn = new Scanner(System.in);
-    protected static double[] massiveOfDoubles;
+    protected Scanner scn = new Scanner(System.in);
+    protected double[] massiveOfDoubles;
     
-    public static void main(String[] args) {
+    public void main(String[] args) {
         System.out.print("Enter length of massive: ");
         int length = scn.nextInt();
         System.out.println("");
@@ -22,8 +22,9 @@ public abstract class TP112221 implements SumOfSquares{
 
         System.out.println(calculateSumOfSquares(massiveOfDoubles));
     }
-
-    public static double calculateSumOfSquares(double[] massive) {
+    
+    @Override
+    public double calculateSumOfSquares(double[] massive) {
         double sum = 0;
         
         for (double num : massive){
