@@ -2,7 +2,5 @@ package tp112221;
 
 public interface SumOfSquares {
     
-    public static double calculateSumOfSquares(double[] massive){
-        return 0;
-    }
+    public double calculateSumOfSquares(double[] massive);
 }
