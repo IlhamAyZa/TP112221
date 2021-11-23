@@ -2,7 +2,7 @@ package tp112221;
 
 import java.util.Scanner;
 
-public abstract class TP112221 implements SumOfSquares{
+public abstract class TP112221 implements FunctionMV{
     
     protected Scanner scn = new Scanner(System.in);
     protected double[] massiveOfDoubles;
@@ -20,14 +20,14 @@ public abstract class TP112221 implements SumOfSquares{
             System.out.println("");
         }
 
-        System.out.println(calculateSumOfSquares(massiveOfDoubles));
+        System.out.println(fx(massiveOfDoubles));
     }
     
     @Override
-    public double calculateSumOfSquares(double[] massive) {
+    public double fx(double[] x) {
         double sum = 0;
         
-        for (double num : massive){
+        for (double num : x){
             sum += num * num ;
         }
         
