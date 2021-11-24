@@ -1,6 +1,5 @@
 package tp112221;
 
-import rossenbroke.Point;
 import java.util.Scanner;
 
 public abstract class MainF1 implements FunctionMV{
