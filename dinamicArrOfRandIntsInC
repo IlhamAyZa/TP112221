@@ -1,6 +1,7 @@
 /******************************************************************************
  * Start : 2:12
  * End : 2:29
+ * Change 1 at 16:06 - 16:07 
 *******************************************************************************/
 
 #include <stdio.h>
@@ -8,19 +9,19 @@
 
 int main()
 {
-    int* arrOfNumbers = (int*) malloc(100 * sizeof(int));
+    double* arrOfNumbers = (double*) malloc(100 * sizeof(double));
     
     int i;
     for (i = 0; i < 100; i++){
         arrOfNumbers[i] = rand() %255 - 128;
-        printf("%d ", arrOfNumbers[i] );
+        printf("%.2f ", arrOfNumbers[i] );
     }
     
-    arrOfNumbers = realloc(arrOfNumbers, 200 * sizeof(int));
+    arrOfNumbers = realloc(arrOfNumbers, 200 * sizeof(double));
     
     for (i = 99; i < 200; i++){
         arrOfNumbers[i] = rand() %255 - 128;
-        printf("%d ", arrOfNumbers[i] );
+        printf("%.2f ", arrOfNumbers[i] );
     }
     
     return 0;
