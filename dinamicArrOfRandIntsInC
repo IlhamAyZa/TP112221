@@ -1,7 +1,7 @@
 /******************************************************************************
  * Start : 2:12
  * End : 2:29
- * Change 1 at 16:06 - 16:07 
+ * Change 1 at 16:07 - 16:0 
 *******************************************************************************/
 
 #include <stdio.h>
@@ -17,10 +17,10 @@ int main()
         printf("%.2f ", arrOfNumbers[i] );
     }
     
-    arrOfNumbers = realloc(arrOfNumbers, 200 * sizeof(double));
+    arrOfNumbers = realloc(arrOfNumbers, 300 * sizeof(double));
     
-    for (i = 99; i < 200; i++){
-        arrOfNumbers[i] = rand() %255 - 128;
+    for (i = 99; i < 300; i++){
+        arrOfNumbers[i] = rand() %500 - 250;
         printf("%.2f ", arrOfNumbers[i] );
     }
     
