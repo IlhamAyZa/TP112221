@@ -1,0 +1,27 @@
+/******************************************************************************
+ * Start : 2:12
+ * End : 2:29
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int* arrOfNumbers = (int*) malloc(100 * sizeof(int));
+    
+    int i;
+    for (i = 0; i < 100; i++){
+        arrOfNumbers[i] = rand() %255 - 128;
+        printf("%d ", arrOfNumbers[i] );
+    }
+    
+    arrOfNumbers = realloc(arrOfNumbers, 200 * sizeof(int));
+    
+    for (i = 99; i < 200; i++){
+        arrOfNumbers[i] = rand() %255 - 128;
+        printf("%d ", arrOfNumbers[i] );
+    }
+    
+    return 0;
+}
