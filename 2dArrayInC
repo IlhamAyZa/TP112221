@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(void)
+{
+    int rows = 3, columns = 4;
+
+    double* ptr = malloc((rows * columns) * sizeof(double));
+ 
+    for (int i = 0; i < r * c; i++){
+        ptr[i] = i + 1;
+    }
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++){
+            printf("%.2f ", ptr[i * c + j]);
+        }
+        printf("\n");
+    }
+ 
+    return 0;
+}
