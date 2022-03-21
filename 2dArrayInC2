@@ -6,13 +6,13 @@ int main()
     int row = 5, col = 5, i, j, count;
  
     double* array[row];
-    for (i = 0; i < r; i++){
-        array[i] = (double*)malloc(c * sizeof(double));
+    for (i = 0; i < row; i++){
+        array[i] = (double*)malloc(col * sizeof(double));
     }
         
     count = 0;
-    for (i = 0; i < r; i++){
-        for (j = 0; j < c; j++){
+    for (i = 0; i < row; i++){
+        for (j = 0; j < col; j++){
             array[i][j] = ++count;
         }
     }
@@ -21,6 +21,7 @@ int main()
         for (j = 0; j < col; j++){
             printf("%.2f ", array[i][j]);
         }
+        printf("\n");
     }
     
    //for (int i = 0; i < row; i++){
