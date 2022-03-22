@@ -5,9 +5,9 @@ int main()
 {
     int row = 5, col = 5, i, j, count;
  
-    double* array[row];
-    for (i = 0; i < row; i++){
-        array[i] = (double*)malloc(col * sizeof(double));
+    int ** array = malloc( row * sizeof(double *));
+    for(i=0; i< row; i++){
+         array[i] = malloc( col * sizeof(double));
     }
         
     count = 0;
